@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Twitter Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e6ecf0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+    }
+    .tweet-box {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .tweet-box textarea {
+      width: 100%;
+      height: 60px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .tweet-box button {
+      float: right;
+      background: #1da1f2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+    .tweet {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+    .tweet strong {
+      color: #1da1f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Mini Twitter</h2>
+    <div class="tweet-box">
+      <textarea placeholder="What's happening?"></textarea>
+      <button>Tweet</button>
+    </div>
+    <div class="tweet">
+      <strong>@user1</strong> Hello world! This is my first tweet.
+    </div>
+    <div class="tweet">
+      <strong>@user2</strong> Loving this simple Twitter clone!
+    </div>
+  </div>
+</body>
+</html>
