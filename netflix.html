@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Netflix Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:#141414;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.9),rgba(0,0,0,0));
+    z-index:100;
+}
+.logo{
+    color:#e50914;
+    font-size:30px;
+    font-weight:bold;
+}
+.nav-links a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+}
+.nav-links a:hover{
+    color:#b3b3b3;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(to top,#141414,rgba(0,0,0,0.3)),
+    url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4") center/cover;
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+}
+.hero-content{
+    max-width:600px;
+}
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+    color:#e5e5e5;
+}
+.hero button{
+    padding:12px 30px;
+    font-size:16px;
+    border:none;
+    border-radius:4px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.play{
+    background:white;
+    color:black;
+}
+.play:hover{
+    background:#e6e6e6;
+}
+.info{
+    background:rgba(109,109,110,0.7);
+    color:white;
+}
+.info:hover{
+    background:rgba(109,109,110,0.4);
+}
+
+/* ROWS */
+.row{
+    margin-top:30px;
+    padding:0 50px;
+}
+.row h2{
+    margin-bottom:10px;
+    font-size:22px;
+}
+.movies{
+    display:flex;
+    overflow-x:auto;
+    padding-bottom:20px;
+}
+.movies::-webkit-scrollbar{
+    display:none;
+}
+.movies img{
+    width:240px;
+    height:135px;
+    object-fit:cover;
+    margin-right:12px;
+    border-radius:6px;
+    transition:0.4s;
+}
+.movies img:hover{
+    transform:scale(1.15);
+    box-shadow:0 10px 30px rgba(0,0,0,0.8);
+}
+
+/* FOOTER */
+.footer{
+    margin-top:60px;
+    padding:40px 50px;
+    color:#808080;
+    font-size:14px;
+}
+.footer-links{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+.footer-links a{
+    color:#808080;
+    text-decoration:none;
+}
+.footer-links a:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">NETFLIX</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">New & Popular</a>
+        <a href="#">My List</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Money Heist</h1>
+        <p>
+            An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history.
+        </p>
+        <button class="play">▶ Play</button>
+        <button class="info">ℹ More Info</button>
+    </div>
+</div>
+
+<!-- ROWS -->
+<div class="row">
+    <h2>Trending Now</h2>
+    <div class="movies">
+        <img src="https://picsum.photos/400/225?1">
+        <img src="https://picsum.photos/400/225?2">
+        <img src="https://picsum.photos/400/225?3">
+        <img src="https://picsum.photos/400/225?4">
+        <img src="https://picsum.photos/400/225?5">
+    </div>
+</div>
+
+<div class="row">
+    <h2>Netflix Originals</h2>
+    <div class="movies">
+        <img src="https://picsum.photos/400/225?6">
+        <img src="https://picsum.photos/400/225?7">
+        <img src="https://picsum.photos/400/225?8">
+        <img src="https://picsum.photos/400/225?9">
+        <img src="https://picsum.photos/400/225?10">
+    </div>
+</div>
+
+<div class="row">
+    <h2>Popular on Netflix</h2>
+    <div class="movies">
+        <img src="https://picsum.photos/400/225?11">
+        <img src="https://picsum.photos/400/225?12">
+        <img src="https://picsum.photos/400/225?13">
+        <img src="https://picsum.photos/400/225?14">
+        <img src="https://picsum.photos/400/225?15">
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Questions? Call 000-800-040-1843</p>
+    <div class="footer-links">
+        <a href="#">FAQ</a>
+        <a href="#">Help Centre</a>
+        <a href="#">Account</a>
+        <a href="#">Media Centre</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Jobs</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Contact Us</a>
+    </div>
+</div>
+
+</body>
+</html>
